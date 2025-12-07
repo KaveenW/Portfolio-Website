@@ -23,7 +23,7 @@ When I’m not building something, I’m usually experimenting with new ideas, i
         start: "bottom 80%",
         end: "bottom 20%",
         scrub: true,
-        markers: true,
+        markers: false,
       },
       ease: "power1.inOut",
     });
