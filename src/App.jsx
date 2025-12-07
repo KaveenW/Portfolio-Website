@@ -1,12 +1,20 @@
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
+import About from "./sections/Aboutsummary";
+import ReactLenis from "lenis/react";
+import Projects from "./sections/Projects";
+import AboutSummary from "./sections/Aboutsummary";
 
 const App = () => {
   return (
-    <div className="relative w-screen min-h-screen overflow-x-hidden">
+    <ReactLenis
+      root
+      className="relative w-screen min-h-screen overflow-x-hidden"
+    >
       <Navbar />
       <Hero />
-    </div>
+      <AboutSummary />
+    </ReactLenis>
   );
 };
 
