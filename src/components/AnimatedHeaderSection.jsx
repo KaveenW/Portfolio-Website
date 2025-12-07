@@ -62,7 +62,7 @@ const AnimatedHeaderSection = ({
         <div className="py-12 sm:py-16 text-end">
           <AnimatedTextLines
             text={text}
-            className={`font-light uppercase value-text-responsive${textColor}`}
+            className={`font-light uppercase value-text-responsive ${textColor}`}
           />
         </div>
       </div>

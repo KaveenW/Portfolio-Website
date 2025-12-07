@@ -1,10 +1,9 @@
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
-import About from "./sections/Aboutsummary";
 import ReactLenis from "lenis/react";
 import Projects from "./sections/Projects";
 import AboutSummary from "./sections/Aboutsummary";
-
+import About from "./sections/About";
 const App = () => {
   return (
     <ReactLenis
@@ -15,6 +14,7 @@ const App = () => {
       <Hero />
       <AboutSummary />
       <Projects />
+      <About />
     </ReactLenis>
   );
 };
