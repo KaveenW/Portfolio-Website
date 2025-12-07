@@ -1,7 +1,7 @@
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 
-const Home = () => {
+const App = () => {
   return (
     <div className="relative w-screen min-h-screen overflow-x-hidden">
       <Navbar />
@@ -10,4 +10,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default App;
