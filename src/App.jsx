@@ -14,6 +14,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <AboutSummary />
+      <Projects />
     </ReactLenis>
   );
 };
