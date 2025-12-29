@@ -4,11 +4,13 @@ import { Environment, Lightformer } from "@react-three/drei";
 import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
+import HeroSocials from "../components/HeroSocial";
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
   const text = `I’m a software engineering building
    full-stack applications and AI-driven features
-    with a focus on real-world impact.`;
+    with a focus 
+    on real-world impact.`;
   return (
     <section id="home" className="flex flex-col justify-end min-h-screen">
       <AnimatedHeaderSection
@@ -17,6 +19,7 @@ const Hero = () => {
         text={text}
         textColor={"text-black"}
       />
+      <HeroSocials />
       <figure
         className="absolute inset-0 -z-50"
         style={{ width: "100vw", height: "100vh" }}
