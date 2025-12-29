@@ -2,7 +2,7 @@ import React from "react";
 import { useRef } from "react";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import AnimatedTextLines from "../components/AnimatedTextLines";
-import manImage from "../../public/images/man.jpg";
+import profileImage from "../../public/assets/projects/profile2.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -11,9 +11,9 @@ const About = () => {
     I build scalable, high-performance solutions
      from prototype to production`;
   const imgRef = useRef(null);
-  const aboutText = `Obsessed with creating fast, intuitive apps — from clean, pixel-perfect React interfaces to reliable and scalable backends. Every line of code I write is meant to feel smooth, thoughtful, and purposeful for the user.
+  const aboutText = `I’m a Software Engineering graduate who enjoys turning ideas into fast, easy-to-use applications. I build clean, responsive websites and apps, focusing on making them reliable and pleasant to use.
 
-When I’m not building something, I’m usually experimenting with new ideas, improving old projects, or helping other developers by sharing what I learn. And if I’m not at my desk, you’ll probably find me playing badminton, sipping a caramel latte, or chasing the next cool tech idea that pops into my head.`;
+I’m interested in using AI when it genuinely improves the experience, such as making products smarter, more helpful, or more personal. I like understanding how everything fits together — from how data moves through the system to the small details users interact with — and I aim to write code that’s clear, practical, and well thought out.`;
 
   useGSAP(() => {
     gsap.to("#about", {
@@ -48,7 +48,7 @@ When I’m not building something, I’m usually experimenting with new ideas, i
         withScrollTrigger={true}
       />
       <div className="flex flex-col items-center justify-between gap-16 px-10 pb-16 text-xl font-light tracking-wide lg:flex-row md:text-2xl lg:text-3xl text-white/60">
-        <img src={manImage} alt="man" className="w-md rounded-3xl" />
+        <img src={profileImage} alt="man" className="w-md rounded-3xl" />
         <AnimatedTextLines text={aboutText} className={"w-full"} />
       </div>
     </section>

@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 const Projects = () => {
-  const text = `I build secure, high-performance full-stack apps with smoothUX to drive growth not headaches.`;
+  const text = `I build and deploy full-stack applications while focusing on performance, security, and real-world usability.`;
   const serviceRefs = useRef([]);
   const isDesktop = useMediaQuery({ minWidth: "48rem" });
   useGSAP(() => {
@@ -53,7 +53,18 @@ const Projects = () => {
               <p className="text-xl leading-relaxed tracking-widest lg:text-2xl text-white/60 text-pretty">
                 {service.description}
               </p>
-              <div className="flex flex-col gap-2 text-2xl sm:gap-4 lg:text-3xl text-white/80">
+
+              <div>
+                {service.techStack.map((tech, techIndex) => (
+                  <span
+                    key={`tech-${index}-${techIndex}`}
+                    className="inline-block px-3 py-1 text-xl lg:text-2xl font-light bg-white/10 rounded-full"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              {/* <div className="flex flex-col gap-2 text-2xl sm:gap-4 lg:text-3xl text-white/80">
                 {service.items.map((item, itemIndex) => (
                   <div key={`item-${index}-${itemIndex}`}>
                     <h3 className="flex">
@@ -67,7 +78,7 @@ const Projects = () => {
                     )}
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

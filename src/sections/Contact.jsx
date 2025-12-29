@@ -2,8 +2,8 @@ import React from "react";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 
 const Contact = () => {
-  const text = `Got a Quesiton, how or project Idea?
-    We'd love ot hear from you and discuss further`;
+  const text = `Interested in working together or discussing an opportunity?
+I’m open to internships, roles, and meaningful projects — let’s talk.`;
   return (
     <section
       id="contact"
@@ -27,17 +27,12 @@ const Contact = () => {
               KaveenW19@gmail.com
             </p>
           </div>
-          <div className="social-link">
+          <div className="social-link pb-10">
             <h2>Phone</h2>
             <div className="w-full h-px my-2 bg-white/30" />
             <p className="text-xl lowercase md:text-2xl lg:text-3xl">
-              +33 7 12 12 32 12
+              +94 76 104 0410
             </p>
-          </div>
-          <div className="social-link">
-            <h2>Social Media</h2>
-            <div className="w-full h-px my-2 bg-white/30" />
-            <div className="flex flex-wrap gap-2"></div>
           </div>
         </div>
       </div>

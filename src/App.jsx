@@ -7,10 +7,7 @@ import About from "./sections/About";
 import Contact from "./sections/Contact";
 const App = () => {
   return (
-    <ReactLenis
-      root
-      className="relative w-screen min-h-screen overflow-x-hidden"
-    >
+    <ReactLenis root className="relative w-full min-h-full overflow-x-hidden">
       <Navbar />
       <Hero />
       <AboutSummary />
