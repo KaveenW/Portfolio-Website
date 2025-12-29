@@ -96,6 +96,12 @@ const Navbar = () => {
     }
     setIsOpen(!isOpen);
   };
+
+  const closeMenu = () => {
+    tl.current.reverse();
+    iconTl.current.reverse();
+    setIsOpen(false);
+  };
   return (
     <>
       <nav
@@ -112,6 +118,7 @@ const Navbar = () => {
                   smooth
                   offset={0}
                   duration={2000}
+                  onClick={closeMenu}
                 >
                   {section}
                 </Link>
